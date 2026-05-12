@@ -1,0 +1,84 @@
+W two B--> Vacation market place
+	example: https://hallatravel.com/
+top 100 of hand pick agencies.
+
+Agences taget:
+	URLs
+	Pages on facebook
+
+
+topic:
+	Online tavel agances(OTAs) grade B & C.
+
+taget customers: 
+	Families.
+	cheeper travelers.
+	indidulas looking group
+	recurring travelers looking for new advenctures.
+	faster vacation sourcing and packaging.
+
+
+
+scenariors:
+	search.
+	compare.
+	get more details.
+	call pages and phones.
+
+Pilot Customer Journey:
+-----------------------
+	1. Customer Search for vacation (conversational)
+	2. Get multiple vacation options (from multiple sources social media/web apps and consistent display)
+	3. Select vacations that match his interest
+	4. Call for proposals
+	5. AI agent - contact sources and get prices and booking availability details
+	6. Select best fit quotation
+	7. Redirected for the travel agency source to Book & Pay
+
+
+Value-Prop:
+	- For Customers:
+	--> Faster vacation sourcing & booking platform (AI-driven)
+	- For Travel Agencies
+	--> Central Lead generation (Pool of requests redirected towards all onboarded businesses)
+
+Actions:
+	- Mansour - initial list of social media profiles to scrab (Top 100 examples of hand picked agencies)
+
+
+
+cd /home/w2b/w2b
+nohup bash -c '
+    source ./venv/bin/activate
+    echo "=== Starting Python scripts at $(date) ===" 
+    python3 start_all.py >> app.log 2>&1 &
+    sleep 5
+    python3 run_csv_pipeline.py >> app.log 2>&1
+' > app.log 2>&1 &
+
+tail -f app.log
+
+
+
+
+cd /home/w2b/w2b
+nohup bash -c '
+    source ./venv/bin/activate
+    echo "=== Starting Python scripts at $(date) ===" 
+    python3 start_all.py >> app.log 2>&1 &
+    sleep 5
+    python3 run_csv_pipeline.py >> app.log 2>&1
+' > app.log 2>&1 &
+
+
+
+
+
+nohup bash -c 'cd /home/w2b/w2b && source ./venv/bin/activate && python3 start_all.py' > app.log 2>&1 &
+tail -f app.log
+
+
+
+
+nohup bash -c 'cd /home/w2b/w2b && source ./venv/bin/activate && python3 run_csv_pipeline.py' > run_csv_pipeline.log 2>&1 &
+tail -f run_csv_pipeline.log

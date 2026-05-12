@@ -1,0 +1,9 @@
+logs/*
+scraped_results/*
+__pycache__/*
+.env
+__pycache__
+scraped_results*/*
+logs_*/*
+chroma_db/*
+executions/*

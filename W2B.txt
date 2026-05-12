@@ -74,11 +74,11 @@ nohup bash -c '
 
 
 
-nohup bash -c 'cd /home/w2b/w2b && source ./venv/bin/activate && python3 start_all.py' > app.log 2>&1 &
+nohup bash -c 'cd /home/w2b/w2b && source ./venv/bin/activate && python3 start_all.py' > app-2.log 2>&1 &
 tail -f app.log
 
 
 
 
 nohup bash -c 'cd /home/w2b/w2b && source ./venv/bin/activate && python3 run_csv_pipeline.py' > run_csv_pipeline.log 2>&1 &
-tail -f run_csv_pipeline.log
+tail -f run_csv_pipeline-2.log
